@@ -9,6 +9,7 @@
   height: 50px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .menuIcon {
   margin-left: 20px;
@@ -19,4 +20,47 @@
   height: 2px;
   background-color: black;
   margin: 3px 0;
+}
+
+.sideBar {
+  background-color: lightpink;
+  width: 320px;
+  height: 100vh;
+  box-shadow: 8px 0 8px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sideBar.hidden {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.material-symbols-outlined {
+  padding: 15px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px;
+  gap: 20px;
+}
+
+ul li {
+  border: 1px solid black;
+  background-color: peachpuff;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  gap: 15px;
 }
