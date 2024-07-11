@@ -27,7 +27,7 @@
   width: 320px;
   height: 100vh;
   box-shadow: 8px 0 8px rgba(0, 0, 0, 1);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   transition: all 0.3s ease;
